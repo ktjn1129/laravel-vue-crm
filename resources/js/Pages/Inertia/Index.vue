@@ -1,3 +1,7 @@
 <script setup></script>
 
-<template>index</template>
+<template>
+    <di v-if="$page.props.flash.message" class="bg-blue-300">
+        {{ $page.props.flash.message }}
+    </di>
+</template>
